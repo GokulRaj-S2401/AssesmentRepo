@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from './components/header/Header';
+import Trending from './components/trending/Trending';
+import './App.css'
 function App() {
+  // let TrendingKey = []
+  // let Trending = []
+  // To Fetch data for Trending keywords
+
+ 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="container">
+        <h3 style={{padding:'20px 0px'}} >Trending Tenor Searches</h3>
+        <Trending />
+      </div>
     </div>
   );
 }
